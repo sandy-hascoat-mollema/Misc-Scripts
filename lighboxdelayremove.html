@@ -1,0 +1,48 @@
+<style>
+
+#Pod_Top_1_a{
+display:none
+}
+
+</style>
+
+<script>
+(function() {
+    var rmwLightboxID = "Pod_Top_1_a";
+    var openDelay = 5000; // 1000 = 1 second
+    
+    var LBUI = window.LBUI;
+    if (!LBUI) {
+        return;
+    }
+    var $ = LBUI.$LBUX_jQuery_1_7;
+    
+    $(window).load(function() {
+   
+        var lightboxInstance = LBUI.instances[rmwLightboxID];
+        
+        if (lightboxInstance) {
+            setTimeout(function() {
+                lightboxInstance.open();
+            }, openDelay);
+        }
+		
+		/* remove the page onload lightbox if the user clicks on a lightbox link on the page */
+		
+		
+		
+		
+		$("#Pod_1_d a").click(function () { 
+		
+			rmwLightboxID.remove();
+			return false; 
+			});
+		
+		
+		/* end*/
+
+		
+    });
+    
+})();
+</script>

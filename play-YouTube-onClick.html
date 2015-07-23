@@ -1,0 +1,43 @@
+<style>#embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } #embed-container iframe, #embed-container object, #embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }.play-video{cursor:pointer;background:#cc0000;padding:.75em;display:inline-block;margin:1em 0;color:white}</style>
+
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+		document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+</script>
+<script>
+
+	jQuery(document).ready(function($) {
+
+
+	jQuery('div.play-video').click(function(){
+	  autoPlayVideo('W3PNsYdA4P0');
+	});
+
+/*--------------------------------
+  Swap video with autoplay video
+---------------------------------*/
+
+	function autoPlayVideo(vcode){
+	  "use strict";
+	  $("#embed-container").html('<iframe src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+	}
+
+	});
+
+
+</script>
+
+<div id="embed-container">
+  <iframe  src="http://www.youtube.com/embed/W3PNsYdA4P0?wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+</div>
+
+
+<div class="play-video">Watch the video</div>
+
+
+
+
+
+
+

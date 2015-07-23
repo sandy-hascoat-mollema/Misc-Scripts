@@ -1,0 +1,37 @@
+
+<!-- use this script to trigger the lightbox RMW on page onload. Place it within the </body> of the page script and change the element ID for both the style and the script -->
+
+
+<style>
+
+#Pod_Top_1_a{
+display:none
+}
+
+</style>
+
+<script>
+(function() {
+    var rmwLightboxID = "Pod_Top_1_a";
+    var openDelay = 5000; // 1000 = 1 second
+    
+    var LBUI = window.LBUI;
+    if (!LBUI) {
+        return;
+    }
+    var $ = LBUI.$LBUX_jQuery_1_7;
+    
+    $(window).load(function() {
+        
+        var lightboxInstance = LBUI.instances[rmwLightboxID];
+        
+        if (lightboxInstance) {
+            setTimeout(function() {
+                lightboxInstance.open();
+            }, openDelay);
+        }
+    });
+    
+})();
+</script>
+

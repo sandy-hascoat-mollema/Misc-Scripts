@@ -1,0 +1,32 @@
+
+
+
+<script>
+
+// Add class to the container that will have the background swap. In this case .main_container_bg
+// add the ids to the tab labels... #tab_1, #tab_2, etc...
+// include new background image url
+
+$( document ).ready(function() {
+
+			$('#tab_1').click(function(){
+				alert("HELLO WORLD!");
+			});
+			
+			$('#tab_2').click(function(){
+				$('.main_container_bg').css('background-image','none')
+			});
+			
+			$('#tab_3').click(function(){
+				alert( "ready3!" );
+			});
+			
+			$('#tab_4').click(function(){
+				alert( "ready4!" );
+			});
+
+
+});
+
+
+</script>

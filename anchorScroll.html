@@ -1,0 +1,62 @@
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+		document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+</script>
+
+<script>
+jQuery(document).ready(function(){
+		jQuery('#nav1').attr("href", "javascript:void(0)");
+		jQuery('#nav2').attr("href", "javascript:void(0)");
+		jQuery('#nav3').attr("href", "javascript:void(0)");
+		jQuery('#nav4').attr("href", "javascript:void(0)");
+		jQuery('#nav5').attr("href", "javascript:void(0)");
+		jQuery('#ball_iZG5dLJ9WkR3qSolSDXdg').attr("href", "javascript:void(0)");
+		jQuery('#ball_iV03S74zbg0eRIVHsPmDXRw').attr("href", "javascript:void(0)");
+		jQuery('#ball_iMztR4HCSHkOmUEu1EAAmg').attr("href", "javascript:void(0)");
+		jQuery('#ball_iwDAjlswOU2ccQNcmyq1sg').attr("href", "javascript:void(0)");
+		
+
+		
+		function scroll_top(){// scroll body to 0px on click
+			jQuery('body,html').animate({	scrollTop: 0}, 800);
+			return false;
+		}
+		
+		function scrollTo(id)	{ // Scroll to ID
+		  jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top}, 800);
+		}
+		
+		jQuery('#ball_iZG5dLJ9WkR3qSolSDXdg').click(function () {
+			scroll_top();
+		});
+		jQuery('#ball_iwDAjlswOU2ccQNcmyq1sg').click(function () {
+			scroll_top();
+		});
+		
+		jQuery('#ball_iV03S74zbg0eRIVHsPmDXRw').click(function () {
+			scrollTo("LTCI");
+		});
+		
+		jQuery('#ball_iMztR4HCSHkOmUEu1EAAmg').click(function () {
+			scrollTo("LTCI");
+		});
+	
+		jQuery('#nav1').click(function () {
+			scrollTo("LTCI");
+		});
+		jQuery('#nav2').click(function () {
+			scrollTo("cost");
+		});
+		jQuery('#nav3').click(function () {
+			scrollTo("how-it-works");
+		});
+		jQuery('#nav4').click(function () {
+			scrollTo("why-genworth");
+		});
+		jQuery('#nav5').click(function () {
+			scrollTo("form");
+		});
+		
+});
+</script>
