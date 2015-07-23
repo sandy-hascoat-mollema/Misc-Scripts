@@ -1,0 +1,24 @@
+
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+		document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+</script>
+
+<script>
+
+
+ $(document).ready(function () {
+
+   var timestamp = new Date().getTime();
+	$('#loader').find('img').attr('src', '/2012/images/august/sailboat.gif'+'?'+timestamp);
+ 
+   });
+
+ </script>
+ 
+ 
+ $("#refresh").click(function() {
+  var timestamp = new Date().getTime();
+  $j('#loader').find('img').attr('src', '/2012/images/august/sailboat.gif'+'?'+timestamp);
+});
