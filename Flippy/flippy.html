@@ -1,0 +1,81 @@
+
+
+<style>
+.panel {
+    width: 100%; /* change to 100% */
+    height: ##height; 
+    position: relative;
+	cursor:pointer;
+	text-align:left;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	
+}
+
+.front {
+    z-index: 2;
+    
+	background-repeat: no-repeat;
+/*	background-size: cover;*/
+	background-position: top left;
+}
+
+.back {
+    z-index: 1;
+    -webkit-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);  
+    transform: rotateX(-180deg);  
+    
+	background-repeat: no-repeat;
+/*	background-size: cover;*/
+	background-position: top left;
+	
+}
+
+.panel:hover .front {
+    z-index: 1;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.panel:hover .back {
+    z-index: 2;   
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+</style>
+
+
+
+
+<div class="panel">
+    <div class="front card" style="background-image: url(##background_image_back)">##back_copy
+    </div>
+    <div class="back card" style="background-image: url(##background_image_front)">##front_copy 
+    </div>
+</div>
+
+
+
+
